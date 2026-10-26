@@ -14,4 +14,4 @@ Every fact on the page is dated. Re-check each route and scholarship against its
 
 ## Visitor statistics
 
-Click tracking is wired in through `track()` and reports to GoatCounter once the script tag in `<head>` is uncommented with the account code. Tracked events: profile filter (`profil/...`), level filter (`niveau/...`), official links (`lien-officiel/...`) and the WhatsApp button (`whatsapp-bientot`).
+Click tracking is wired in through `track()` and reports to GoatCounter once the script tag in `<head>` is uncommented with the account code. Tracked events: profile filter (`profil/...`), level filter (`niveau/...`), official links (`lien-officiel/...`) and the WhatsApp links (`whatsapp/haut` at the top, `whatsapp/bas` in the footer).
