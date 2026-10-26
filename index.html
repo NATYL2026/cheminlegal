@@ -172,6 +172,13 @@ section > .wrap > .intro p { color: var(--muted); }
 .flags { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
 .flags span { font-size: .9rem; padding: 6px 12px; border-radius: 999px; background: var(--stop-soft); color: var(--fg); }
 
+.srcs { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font-size: .9rem; }
+.srclist { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 18px; margin-top: 28px; }
+.srclist h3 { font-size: 1rem; margin-bottom: 6px; }
+.srclist ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 4px; font-size: .93rem; }
+.srclist a { word-break: break-word; }
+.cal .what a { font-size: .85rem; }
+
 /* Domains */
 .domains { display: flex; flex-wrap: wrap; gap: 10px; }
 .domains code { font-family: var(--font-mono); font-size: .95rem; padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--fg); }
@@ -291,6 +298,7 @@ section[id] { scroll-margin-top: 70px; }
           <div>
             <h3>Royaume-Uni : visa « care worker » (aide à domicile)</h3>
             <p>Le recrutement d'aides à domicile depuis l'étranger est fermé depuis le 22 juillet 2025. Seuls les infirmiers diplômés et certaines professions de santé peuvent encore postuler.</p>
+            <p class="srcs"><a class="src" href="https://www.gov.uk/health-care-worker-visa" target="_blank" rel="noopener">Source : gov.uk ↗</a></p>
           </div>
         </div>
         <div class="closed-item">
@@ -298,6 +306,7 @@ section[id] { scroll-margin-top: 70px; }
           <div>
             <h3>Canada : programmes pour aides familiaux</h3>
             <p>Les nouvelles demandes sont suspendues depuis le 19 décembre 2025, et les programmes n'ont pas rouvert en 2026.</p>
+            <p class="srcs"><a class="src" href="https://www.canada.ca/en/immigration-refugees-citizenship/news/notices/pausing-home-care-worker-immigration-pilots-application-intake.html" target="_blank" rel="noopener">Source : canada.ca ↗</a></p>
           </div>
         </div>
         <div class="closed-item">
@@ -305,6 +314,7 @@ section[id] { scroll-margin-top: 70px; }
           <div>
             <h3>États-Unis : loterie DV et carte verte d'infirmier, pour plusieurs pays</h3>
             <p>Depuis le 1er janvier 2026, une proclamation présidentielle suspend les visas d'immigrant pour les ressortissants de Côte d'Ivoire, du Sénégal, du Bénin, du Togo, du Gabon et d'autres pays. Gagner à la loterie ne permet pas d'obtenir le visa. Les inscriptions à la loterie DV-2027 ne sont pas ouvertes au 24 octobre 2026. Seul site officiel : <strong>dvprogram.state.gov</strong> (frais officiels : 1 $).</p>
+            <p class="srcs"><a class="src" href="https://travel.state.gov" target="_blank" rel="noopener">Source : travel.state.gov ↗</a><a class="src" href="https://dvprogram.state.gov" target="_blank" rel="noopener">Loterie officielle : dvprogram.state.gov ↗</a></p>
           </div>
         </div>
       </div>
@@ -328,6 +338,12 @@ section[id] { scroll-margin-top: 70px; }
           <p>de venir vous recruter pour un emploi ou une formation dans la santé en Allemagne. Seule l'Agence fédérale pour l'emploi allemande peut le faire. Une agence qui vous démarche et vous fait payer agit illégalement.</p>
         </div>
       </div>
+      <p class="srcs">
+        <a class="src" href="https://www.who.int/publications/i/item/9789240069787" target="_blank" rel="noopener">Liste de l'OMS (2023) ↗</a>
+        <a class="src" href="https://www.who.int/news-room/questions-and-answers/item/who-health-workforce-support-and-safeguards-list" target="_blank" rel="noopener">Questions-réponses de l'OMS ↗</a>
+        <a class="src" href="https://www.arbeitsagentur.de/datei/rekrutierungs-und-vermittlungsverbot-who_ba146788.pdf" target="_blank" rel="noopener">Note de l'Agence fédérale pour l'emploi (PDF) ↗</a>
+        <a class="src" href="https://www.faire-anwerbung-pflege-deutschland.de/guetezeichen-nutzende" target="_blank" rel="noopener">Agences labellisées « Faire Anwerbung » ↗</a>
+      </p>
     </div>
   </section>
 
@@ -365,6 +381,53 @@ section[id] { scroll-margin-top: 70px; }
       </div>
       <div class="domains">
         <code>.gouv.fr</code><code>.diplo.de</code><code>make-it-in-germany.com</code><code>.gc.ca / canada.ca</code><code>.be</code><code>.public.lu</code><code>.gov.uk</code><code>.state.gov</code>
+      </div>
+
+      <div class="srclist" id="toutes-les-sources">
+        <div>
+          <h3>Allemagne</h3>
+          <ul>
+            <li><a href="https://www.make-it-in-germany.com/fr/" target="_blank" rel="noopener">Make it in Germany</a></li>
+            <li><a href="https://www.make-it-in-germany.com/fr/visa-sejour/types/carte-opportunite" target="_blank" rel="noopener">Carte d'opportunité</a></li>
+            <li><a href="https://www.anerkennung-in-deutschland.de" target="_blank" rel="noopener">Reconnaissance des diplômes</a></li>
+            <li><a href="https://www.arbeitsagentur.de/vor-ort/zav" target="_blank" rel="noopener">Agence fédérale pour l'emploi (ZAV)</a></li>
+            <li><a href="https://www.bundesfreiwilligendienst.de" target="_blank" rel="noopener">Service volontaire fédéral</a></li>
+            <li><a href="https://digital.diplo.de" target="_blank" rel="noopener">Demande de visa en ligne</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>France</h3>
+          <ul>
+            <li><a href="https://france-visas.gouv.fr" target="_blank" rel="noopener">France-Visas</a></li>
+            <li><a href="https://www.service-public.fr/particuliers/vosdroits/N110" target="_blank" rel="noopener">Service-Public : étrangers en France</a></li>
+            <li><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051643488" target="_blank" rel="noopener">Liste des métiers en tension</a></li>
+            <li><a href="https://www.campusfrance.org/fr" target="_blank" rel="noopener">Campus France</a></li>
+            <li><a href="https://formation-civique.interieur.gouv.fr" target="_blank" rel="noopener">Examen civique</a></li>
+            <li><a href="https://www.ofii.fr" target="_blank" rel="noopener">OFII</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Belgique et Luxembourg</h3>
+          <ul>
+            <li><a href="https://emploi.wallonie.be/home/travailleurs-etrangers/permis-de-travail/liste-des-metiers-en-penurie.html" target="_blank" rel="noopener">Wallonie : métiers en pénurie</a></li>
+            <li><a href="https://economie-emploi.brussels/autorisation-travail-profession-penurie" target="_blank" rel="noopener">Bruxelles : métiers en pénurie</a></li>
+            <li><a href="https://dofi.ibz.be" target="_blank" rel="noopener">Office des étrangers</a></li>
+            <li><a href="https://guichet.public.lu/fr/citoyens/immigration/plus-3-mois/ressortissant-tiers/salarie/salarie-pays-tiers.html" target="_blank" rel="noopener">Luxembourg : travailler comme salarié</a></li>
+            <li><a href="https://adem.public.lu/dam-assets/fr/publications/adem/metiers-penurie.pdf" target="_blank" rel="noopener">ADEM : métiers très en pénurie (PDF)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Canada, États-Unis, Royaume-Uni</h3>
+          <ul>
+            <li><a href="https://www.canada.ca/fr/immigration-refugies-citoyennete.html" target="_blank" rel="noopener">Immigration Canada (IRCC)</a></li>
+            <li><a href="https://www.canada.ca/fr/immigration-refugies-citoyennete/services/immigrer-canada/immigration-francophone-minoritaire.html" target="_blank" rel="noopener">Immigration francophone hors Québec</a></li>
+            <li><a href="https://www.quebec.ca/immigration" target="_blank" rel="noopener">Immigration Québec</a></li>
+            <li><a href="https://travel.state.gov" target="_blank" rel="noopener">Département d'État américain</a></li>
+            <li><a href="https://dvprogram.state.gov" target="_blank" rel="noopener">Loterie DV (seul site officiel)</a></li>
+            <li><a href="https://www.gov.uk/health-care-worker-visa" target="_blank" rel="noopener">Visa Health and Care</a></li>
+            <li><a href="https://www.nmc.org.uk" target="_blank" rel="noopener">NMC (infirmiers)</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -576,20 +639,20 @@ const SCHOLARSHIPS = [
 ];
 
 const DEADLINES = [
-  { when: "15 nov. 2026", t: "Eiffel : dates internes des universités", d: "Exemple : Dauphine. Contactez votre université française dès maintenant.", lv: ["M", "D"], st: "ok", sl: "Confirmé" },
-  { when: "Mi-nov. 2026", t: "VLIR-UOS et Stipendium Hungaricum : ouverture", d: "Préparez vos documents et votre test d'anglais.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
-  { when: "27 nov. 2026", t: "Bourses suisses : Côte d'Ivoire", d: "Les dates varient selon le pays : voir l'ambassade de Suisse.", lv: ["D"], st: "warn", sl: "À vérifier" },
-  { when: "30 nov. 2026", t: "Mastercard : African Leadership University", d: "Licence, sans SAT ni TOEFL.", lv: ["L"], st: "ok", sl: "Confirmé" },
-  { when: "~15 déc. 2026", t: "Université panafricaine", d: "Master et doctorat, bourse de l'Union africaine.", lv: ["M", "D"], st: "warn", sl: "Attendu" },
-  { when: "6 janv. 2027", t: "Eiffel : dépôt par les universités", d: "Date limite nationale.", lv: ["M", "D"], st: "ok", sl: "Confirmé" },
-  { when: "15 janv. 2027", t: "Stipendium Hungaricum", d: "À 14 h, heure de Budapest.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
-  { when: "18 janv. 2027", t: "VLIR-UOS : Université de Gand", d: "Les autres programmes ferment jusqu'en mars.", lv: ["M"], st: "ok", sl: "Confirmé" },
-  { when: "Janv.–févr. 2027", t: "Erasmus Mundus : la plupart des programmes", d: "Vérifiez chaque programme dans le catalogue.", lv: ["M"], st: "ok", sl: "Confirmé" },
-  { when: "~31 janv. 2027", t: "Banque islamique de développement", d: "Licence à post-doctorat, pays membres.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
-  { when: "20 févr. 2027", t: "Türkiye Bursları", d: "Ouverture le 10 janvier.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
-  { when: "1er mars 2027", t: "Fondation Heinrich Böll", d: "Session de printemps.", lv: ["M", "D"], st: "ok", sl: "Confirmé" },
-  { when: "Mars–avr. 2027", t: "Bourse du gouvernement chinois", d: "Ambassade de Chine ou université.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
-  { when: "Mai–juil. 2027", t: "AMCI (Maroc)", d: "Surveillez le communiqué de votre ministère.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" }
+  { when: "15 nov. 2026", t: "Eiffel : dates internes des universités", d: "Exemple : Dauphine. Contactez votre université française dès maintenant.", lv: ["M", "D"], st: "ok", sl: "Confirmé", src: "https://www.campusfrance.org/fr/la-bourse-france-excellence-eiffel" },
+  { when: "Mi-nov. 2026", t: "VLIR-UOS et Stipendium Hungaricum : ouverture", d: "Préparez vos documents et votre test d'anglais.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu", src: "https://stipendiumhungaricum.hu" },
+  { when: "27 nov. 2026", t: "Bourses suisses : Côte d'Ivoire", d: "Les dates varient selon le pays : voir l'ambassade de Suisse.", lv: ["D"], st: "warn", sl: "À vérifier", src: "https://www.sbfi.admin.ch/scholarships_en" },
+  { when: "30 nov. 2026", t: "Mastercard : African Leadership University", d: "Licence, sans SAT ni TOEFL.", lv: ["L"], st: "ok", sl: "Confirmé", src: "https://mastercardfdn.org/all/scholars/becoming-a-scholar/" },
+  { when: "~15 déc. 2026", t: "Université panafricaine", d: "Master et doctorat, bourse de l'Union africaine.", lv: ["M", "D"], st: "warn", sl: "Attendu", src: "https://www.au-pau.org/submission/" },
+  { when: "6 janv. 2027", t: "Eiffel : dépôt par les universités", d: "Date limite nationale.", lv: ["M", "D"], st: "ok", sl: "Confirmé", src: "https://www.campusfrance.org/fr/la-bourse-france-excellence-eiffel" },
+  { when: "15 janv. 2027", t: "Stipendium Hungaricum", d: "À 14 h, heure de Budapest.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu", src: "https://stipendiumhungaricum.hu" },
+  { when: "18 janv. 2027", t: "VLIR-UOS : Université de Gand", d: "Les autres programmes ferment jusqu'en mars.", lv: ["M"], st: "ok", sl: "Confirmé", src: "https://www.vliruos.be/en/icpconnect-scholarships" },
+  { when: "Janv.–févr. 2027", t: "Erasmus Mundus : la plupart des programmes", d: "Vérifiez chaque programme dans le catalogue.", lv: ["M"], st: "ok", sl: "Confirmé", src: "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" },
+  { when: "~31 janv. 2027", t: "Banque islamique de développement", d: "Licence à post-doctorat, pays membres.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu", src: "https://www.isdb.org/scholarships" },
+  { when: "20 févr. 2027", t: "Türkiye Bursları", d: "Ouverture le 10 janvier.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu", src: "https://www.turkiyeburslari.gov.tr" },
+  { when: "1er mars 2027", t: "Fondation Heinrich Böll", d: "Session de printemps.", lv: ["M", "D"], st: "ok", sl: "Confirmé", src: "https://www.boell.de/en/applying-scholarship" },
+  { when: "Mars–avr. 2027", t: "Bourse du gouvernement chinois", d: "Ambassade de Chine ou université.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu", src: "https://www.campuschina.org" },
+  { when: "Mai–juil. 2027", t: "AMCI (Maroc)", d: "Surveillez le communiqué de votre ministère.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu", src: "https://www.amci.ma" }
 ];
 
 let level = "all";
@@ -628,7 +691,7 @@ function renderScholarships() {
   dlEl.innerHTML = dl.length ? dl.map(d => `
     <li>
       <span class="when">${esc(d.when)}</span>
-      <span class="what"><strong>${esc(d.t)}</strong><span>${esc(d.d)}</span></span>
+      <span class="what"><strong>${esc(d.t)}</strong><span>${esc(d.d)} <a class="src" href="${esc(d.src)}" target="_blank" rel="noopener">Site officiel ↗</a></span></span>
       <span class="stamp ${d.st}">${esc(d.sl)}</span>
     </li>`).join("") : `<li class="empty">Aucune date limite pour ce niveau dans les prochains mois.</li>`;
 }
