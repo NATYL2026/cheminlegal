@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Les voies légales pour étudier, vous former et travailler en Europe et au Canada, les bourses d'études et les arnaques à éviter. Gratuit, en français.">
+<link rel="canonical" href="https://cheminlegal.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Chemin Légal">
+<meta property="og:title" content="Chemin Légal : partir à l'étranger légalement">
+<meta property="og:description" content="Les voies légales pour étudier, vous former et travailler en Europe et au Canada, les bourses d'études et les arnaques à éviter. Gratuit, en français.">
+<meta property="og:url" content="https://cheminlegal.com/">
+<meta name="theme-color" content="#0d6a4c">
+<!-- GoatCounter: once the account exists, uncomment and replace CODE with the account code.
+<script data-goatcounter="https://CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
+<title>Chemin Légal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: one narrow reading column; a passport-page "visa stamp" motif marks each route's status. */
+:root {
+  --bg: #f2f5f1;
+  --surface: #ffffff;
+  --fg: #13201a;
+  --muted: #4d5f56;
+  --line: #d3ddd6;
+  --accent: #0d6a4c;       /* passport green */
+  --accent-ink: #ffffff;
+  --accent-soft: #dcefe6;
+  --ok: #0d6a4c;
+  --warn: #8a5a00;
+  --warn-soft: #fbefd6;
+  --stop: #b0261d;
+  --stop-soft: #fbe3e0;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1612; --surface: #16211c; --fg: #e4ece7; --muted: #a2b4aa; --line: #2b3a33;
+    --accent: #52c698; --accent-ink: #06130d; --accent-soft: #173a2c;
+    --ok: #52c698; --warn: #e8b552; --warn-soft: #3a2d12; --stop: #f07b70; --stop-soft: #3d1a17;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1612; --surface: #16211c; --fg: #e4ece7; --muted: #a2b4aa; --line: #2b3a33;
+  --accent: #52c698; --accent-ink: #06130d; --accent-soft: #173a2c;
+  --ok: #52c698; --warn: #e8b552; --warn-soft: #3a2d12; --stop: #f07b70; --stop-soft: #3d1a17;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap {
+  max-width: 62rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; }
+h3 { font-size: 1.2rem; font-weight: 600; }
+p { margin: 0; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.eyebrow { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* Header */
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--surface); border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 12px; }
+.brand { font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; color: var(--fg); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.brand-mark { width: 28px; height: 28px; border: 2.5px solid var(--accent); border-radius: 50%; display: grid; place-items: center; color: var(--accent); font-family: var(--font-mono); font-size: .7rem; font-weight: 600; transform: rotate(-12deg); }
+nav.links { display: flex; gap: 18px; font-size: .95rem; }
+nav.links a { color: var(--muted); text-decoration: none; }
+nav.links a:hover { color: var(--fg); }
+@media (max-width: 640px) { nav.links { display: none; } }
+
+/* Hero */
+.hero { padding-block: 56px 40px; display: grid; gap: 28px; grid-template-columns: 1.4fr 1fr; align-items: center; }
+.hero h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 800; letter-spacing: -.01em; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero .lead { margin-top: 18px; font-size: 1.2rem; color: var(--muted); max-width: 36rem; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; font: 700 1rem var(--font-body); padding: 13px 20px; border-radius: 10px; text-decoration: none; border: 2px solid var(--accent); cursor: pointer; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-ghost { background: transparent; color: var(--accent); }
+.soon { font-family: var(--font-mono); font-size: .7rem; padding: 2px 6px; border-radius: 4px; background: var(--accent-soft); color: var(--fg); }
+.btn-primary .soon { background: rgba(255,255,255,.22); color: inherit; }
+.verified { margin-top: 18px; font-family: var(--font-mono); font-size: .8rem; color: var(--muted); }
+
+.passport { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: grid; gap: 14px; position: relative; overflow: hidden; }
+.passport .row { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dashed var(--line); padding-bottom: 10px; font-size: .95rem; }
+.passport .row:last-of-type { border-bottom: 0; }
+.passport .row span:first-child { color: var(--muted); }
+.passport .row span:last-child { font-weight: 700; text-align: right; }
+.passport .stamp-big { position: absolute; right: -10px; bottom: -14px; transform: rotate(-14deg); opacity: .9; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding-block: 36px 28px; } }
+
+/* Stamp chips */
+.stamp { display: inline-block; font-family: var(--font-mono); font-weight: 600; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; padding: 4px 9px; border: 2px solid currentColor; border-radius: 6px; transform: rotate(-3deg); white-space: nowrap; }
+.stamp.ok { color: var(--ok); }
+.stamp.warn { color: var(--warn); }
+.stamp.stop { color: var(--stop); }
+.stamp.big { font-size: 1rem; padding: 8px 14px; border-width: 3px; }
+
+section { padding-block: 44px; }
+section > .wrap > .intro { display: grid; gap: 10px; margin-bottom: 26px; max-width: 42rem; }
+section > .wrap > .intro p { color: var(--muted); }
+
+/* Finder */
+.finder { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px; display: grid; gap: 14px; margin-bottom: 24px; }
+.finder fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; }
+.finder legend { font-weight: 700; margin-bottom: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: 400 .95rem var(--font-body); padding: 8px 14px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 700; }
+.count { font-family: var(--font-mono); font-size: .85rem; color: var(--muted); }
+
+.routes { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.route { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.route-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.route .country { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.route dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; font-size: .93rem; }
+.route dt { color: var(--muted); }
+.route dd { margin: 0; font-weight: 700; }
+.route .note { font-size: .93rem; color: var(--muted); }
+.route .warnline { font-size: .9rem; background: var(--warn-soft); color: var(--fg); padding: 8px 10px; border-radius: 8px; }
+.route a.src { font-size: .9rem; word-break: break-word; }
+
+/* Scholarships */
+.cal { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 6px 18px; margin-bottom: 28px; }
+.cal h3 { padding-block: 14px 6px; }
+.cal ol { list-style: none; margin: 0; padding: 0; }
+.cal li { display: grid; grid-template-columns: 6.5rem 1fr auto; gap: 12px; align-items: baseline; padding-block: 12px; border-top: 1px dashed var(--line); }
+.cal .when { font-family: var(--font-mono); font-size: .85rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--accent); }
+.cal .what { min-width: 0; }
+.cal .what strong { display: block; }
+.cal .what span { font-size: .9rem; color: var(--muted); }
+.cal .empty { padding-block: 14px; color: var(--muted); }
+@media (max-width: 520px) { .cal li { grid-template-columns: 1fr auto; } .cal .when { grid-column: 1 / -1; } }
+.levels { font-family: var(--font-mono); font-size: .75rem; color: var(--muted); }
+.subhead { margin-bottom: 14px; }
+
+/* Closed routes */
+.closed { display: grid; gap: 14px; }
+.closed-item { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; background: var(--stop-soft); border-radius: 12px; padding: 16px 18px; }
+.closed-item h3 { margin-bottom: 4px; }
+.closed-item p { font-size: .97rem; }
+@media (max-width: 520px) { .closed-item { grid-template-columns: 1fr; } }
+
+/* WHO rule */
+.rule { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.rule > div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: grid; gap: 8px; align-content: start; }
+.rule .yes h3 { color: var(--ok); }
+.rule .no h3 { color: var(--stop); }
+@media (max-width: 640px) { .rule { grid-template-columns: 1fr; } }
+
+/* Scams */
+.scams { counter-reset: s; display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; }
+.scams li { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; display: grid; gap: 6px; }
+.scams li strong { font-family: var(--font-display); font-size: 1.1rem; }
+.scams .tell { font-size: .95rem; color: var(--muted); }
+.flags { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+.flags span { font-size: .9rem; padding: 6px 12px; border-radius: 999px; background: var(--stop-soft); color: var(--fg); }
+
+/* Domains */
+.domains { display: flex; flex-wrap: wrap; gap: 10px; }
+.domains code { font-family: var(--font-mono); font-size: .95rem; padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--fg); }
+
+footer { border-top: 1px solid var(--line); padding-block: 28px 40px; font-size: .9rem; color: var(--muted); }
+footer .wrap { display: grid; gap: 10px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .stamp-big { animation: stamp .5s ease-out .2s both; }
+  @keyframes stamp { from { transform: rotate(-14deg) scale(1.4); opacity: 0; } to { transform: rotate(-14deg) scale(1); opacity: .9; } }
+}
+</style>
+<style>
+:root { color-scheme: light; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 70px; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="brand-mark">OK</span>Chemin Légal</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#voies">Les voies</a>
+      <a href="#bourses">Bourses</a>
+      <a href="#fermees">Voies fermées</a>
+      <a href="#arnaques">Arnaques</a>
+      <a href="#sources">Sites officiels</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Études · Formation · Travail à l'étranger</p>
+      <h1>Partir à l'étranger <em>légalement</em>, sans payer d'arnaqueur.</h1>
+      <p class="lead">Les voies officielles pour étudier, vous former et travailler en Europe et au Canada, expliquées simplement en français. Gratuit.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#voies">Trouver ma voie</a>
+        <a class="btn btn-ghost" href="#bourses">Voir les bourses</a>
+        <button type="button" class="btn btn-ghost" id="whatsapp-soon" onclick="track('whatsapp-bientot'); this.querySelector('.soon').textContent = 'merci, bientôt !'">Assistant WhatsApp <span class="soon">bientôt</span></button>
+      </div>
+      <p class="verified">Fiches vérifiées le 24 octobre 2026 · revérifiées tous les 3 mois</p>
+    </div>
+    <aside class="passport" aria-label="Exemple de parcours">
+      <p class="eyebrow">Exemple de parcours</p>
+      <div class="row"><span>Profil</span><span>Bachelière, 23 ans, Douala</span></div>
+      <div class="row"><span>Voie</span><span>Formation d'infirmière, Allemagne</span></div>
+      <div class="row"><span>Étape 1</span><span>Allemand B1 → B2 (12–18 mois)</span></div>
+      <div class="row"><span>Salaire en formation</span><span>dès 1 490 € brut/mois</span></div>
+      <div class="row"><span>Frais d'agence</span><span>0 €</span></div>
+      <span class="stamp ok big stamp-big">Voie légale</span>
+    </aside>
+  </div>
+
+  <section id="voies">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Les voies ouvertes en 2026</p>
+        <h2>Quelle voie correspond à votre profil ?</h2>
+        <p>Choisissez votre situation. Nous affichons les voies qui vous concernent, de la plus réaliste à la plus difficile.</p>
+      </div>
+
+      <div class="finder">
+        <fieldset>
+          <legend>Je suis…</legend>
+          <div class="chips" id="profiles"></div>
+        </fieldset>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
+
+      <div class="routes" id="routes"></div>
+    </div>
+  </section>
+
+  <section id="bourses">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Bourses d'études 2026–2027</p>
+        <h2>Étudier à l'étranger sans tout payer</h2>
+        <p>Les principales bourses ouvertes aux Africains francophones, avec leurs prochaines dates limites. Une vraie bourse ne vous demande jamais d'argent pour postuler.</p>
+      </div>
+
+      <div class="finder">
+        <fieldset>
+          <legend>Je veux faire…</legend>
+          <div class="chips" id="levels"></div>
+        </fieldset>
+        <p class="count" id="bcount" aria-live="polite"></p>
+      </div>
+
+      <div class="cal">
+        <h3>Prochaines dates limites</h3>
+        <ol id="deadlines"></ol>
+      </div>
+
+      <h3 class="subhead">Les bourses</h3>
+      <div class="routes" id="scholarships"></div>
+    </div>
+  </section>
+
+  <section id="fermees">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">À connaître absolument</p>
+        <h2>Ces voies sont fermées. Toute offre est une arnaque.</h2>
+        <p>Si quelqu'un vous propose l'une de ces voies contre de l'argent, ne payez pas.</p>
+      </div>
+      <div class="closed">
+        <div class="closed-item">
+          <span class="stamp stop big">Fermé</span>
+          <div>
+            <h3>Royaume-Uni : visa « care worker » (aide à domicile)</h3>
+            <p>Le recrutement d'aides à domicile depuis l'étranger est fermé depuis le 22 juillet 2025. Seuls les infirmiers diplômés et certaines professions de santé peuvent encore postuler.</p>
+          </div>
+        </div>
+        <div class="closed-item">
+          <span class="stamp stop big">Suspendu</span>
+          <div>
+            <h3>Canada : programmes pour aides familiaux</h3>
+            <p>Les nouvelles demandes sont suspendues depuis le 19 décembre 2025, et les programmes n'ont pas rouvert en 2026.</p>
+          </div>
+        </div>
+        <div class="closed-item">
+          <span class="stamp stop big">Bloqué</span>
+          <div>
+            <h3>États-Unis : loterie DV et carte verte d'infirmier, pour plusieurs pays</h3>
+            <p>Depuis le 1er janvier 2026, une proclamation présidentielle suspend les visas d'immigrant pour les ressortissants de Côte d'Ivoire, du Sénégal, du Bénin, du Togo, du Gabon et d'autres pays. Gagner à la loterie ne permet pas d'obtenir le visa. Les inscriptions à la loterie DV-2027 ne sont pas ouvertes au 24 octobre 2026. Seul site officiel : <strong>dvprogram.state.gov</strong> (frais officiels : 1 $).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="oms">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Métiers de la santé</p>
+        <h2>Infirmiers et soignants : la règle à connaître</h2>
+        <p>Le Cameroun, la Côte d'Ivoire, le Sénégal, la RD Congo et presque toute l'Afrique francophone figurent sur une liste de l'OMS des pays qui manquent de soignants. Cela ne vous interdit pas de partir.</p>
+      </div>
+      <div class="rule">
+        <div class="yes">
+          <h3>Vous avez le droit</h3>
+          <p>de chercher vous-même un hôpital, une maison de retraite ou une école de soins, et d'y postuler directement. C'est légal en Allemagne, au Royaume-Uni et ailleurs.</p>
+        </div>
+        <div class="no">
+          <h3>Une agence n'a pas le droit</h3>
+          <p>de venir vous recruter pour un emploi ou une formation dans la santé en Allemagne. Seule l'Agence fédérale pour l'emploi allemande peut le faire. Une agence qui vous démarche et vous fait payer agit illégalement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="arnaques">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Protégez votre argent</p>
+        <h2>Les 6 arnaques les plus fréquentes</h2>
+      </div>
+      <ol class="scams">
+        <li><strong>Le « contrat garanti » payant</strong><span class="tell">On vous demande 1 000 à 10 000 € pour un contrat de travail ou une place de formation. Un recruteur sérieux est gratuit pour le travailleur.</span></li>
+        <li><strong>Le programme qui n'existe plus</strong><span class="tell">« Visa care worker UK », « aides familiaux Canada 2026 » : ces voies sont fermées.</span></li>
+        <li><strong>La fausse loterie américaine</strong><span class="tell">Des pages font payer 50 à 300 $ pour vous « inscrire », ou vous annoncent un gain par WhatsApp. Le gouvernement américain n'envoie jamais ce message.</span></li>
+        <li><strong>Les faux certificats de langue</strong><span class="tell">« B1 sans examen », « TCF garanti ». Un faux document entraîne un refus de visa, voire une interdiction d'entrer dans le pays.</span></li>
+        <li><strong>La fausse bourse</strong><span class="tell">« Vous êtes présélectionné, payez 50 000 FCFA pour valider votre bourse. » Erasmus Mundus, le DAAD, Chevening, VLIR-UOS et l'AMCI n'ont aucun agent, et aucune bourse ne se paie par Orange Money, Wave ou Western Union.</span></li>
+        <li><strong>La fausse ambassade sur WhatsApp ou Facebook</strong><span class="tell">Paiement par Mobile Money ou Western Union pour un « rendez-vous VIP ». Une ambassade ne demande jamais de paiement sur un compte privé.</span></li>
+      </ol>
+      <div class="flags" aria-label="Signaux d'alerte">
+        <span>« Plus que 3 places »</span>
+        <span>Paiement sur un compte personnel</span>
+        <span>« 100 % de réussite »</span>
+        <span>On garde votre passeport</span>
+        <span>Pas d'adresse vérifiable</span>
+        <span>Frais retenus sur votre salaire</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="wrap">
+      <div class="intro">
+        <p class="eyebrow">Vérifiez toujours</p>
+        <h2>Un site officiel se termine par…</h2>
+        <p>Méfiez-vous de tout autre site qui prétend délivrer un visa ou un rendez-vous.</p>
+      </div>
+      <div class="domains">
+        <code>.gouv.fr</code><code>.diplo.de</code><code>make-it-in-germany.com</code><code>.gc.ca / canada.ca</code><code>.be</code><code>.public.lu</code><code>.gov.uk</code><code>.state.gov</code>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Chemin Légal</strong> donne des informations générales à partir de sources officielles. Ce n'est pas un conseil juridique, et nous ne vendons ni visa ni contrat. Les règles changent souvent : vérifiez toujours sur le site officiel avant de payer quoi que ce soit.</p>
+    <p>Dernière vérification : 24 octobre 2026.</p>
+  </div>
+</footer>
+
+<script>
+// Counts a click in GoatCounter once its script is on the page; does nothing otherwise.
+function track(name) {
+  try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: name, title: name, event: true }); } catch (_) {}
+}
+document.addEventListener("click", e => {
+  const a = e.target.closest("a.src");
+  if (a) track("lien-officiel/" + a.hostname);
+});
+
+const PROFILES = [
+  { id: "all", label: "Tous les profils" },
+  { id: "bac", label: "Bachelier(ère)" },
+  { id: "soin", label: "Infirmier(ère) ou aide-soignant(e)" },
+  { id: "sup", label: "Diplômé(e) du supérieur" },
+  { id: "tech", label: "Métier technique" },
+  { id: "etu", label: "Futur(e) étudiant(e)" }
+];
+
+// status: ok = ouvert et réaliste, warn = ouvert mais difficile ou coûteux
+const ROUTES = [
+  { c: "Allemagne", t: "Formation d'infirmier payée (Ausbildung)", s: "ok", sl: "Ouvert", rank: 1, p: ["bac"],
+    lang: "Allemand B1–B2", cost: "Faible (visa 75 €, cours d'allemand)", time: "12–24 mois", pay: "1 490 € brut/mois dès la 1re année (public)",
+    note: "Formation de 3 ans, gratuite et payée, avec un diplôme reconnu dans toute l'UE. Beaucoup d'hôpitaux proposent un logement : demandez-le par écrit.",
+    warn: "Postulez vous-même. Aucune agence n'a le droit de vous recruter pour cette formation.",
+    src: "https://www.make-it-in-germany.com/fr/" },
+  { c: "Allemagne", t: "Reconnaissance du diplôme d'infirmier", s: "ok", sl: "Ouvert", rank: 2, p: ["soin"],
+    lang: "Allemand B1–B2", cost: "Moyen (dossier, traductions, visa 75 €)", time: "12–24 mois", pay: "Salaire d'assistant pendant la reconnaissance",
+    note: "Vous faites reconnaître votre diplôme, puis vous passez un examen ou un stage d'adaptation en Allemagne.",
+    src: "https://www.anerkennung-in-deutschland.de" },
+  { c: "Allemagne", t: "Autres formations payées (électricien, logistique, hôtellerie…)", s: "ok", sl: "Ouvert", rank: 3, p: ["bac", "tech"],
+    lang: "Allemand B1", cost: "Faible à moyen", time: "12–18 mois", pay: "Selon le métier et la région",
+    note: "Mêmes étapes que la formation en soins, sans la règle de l'OMS : des agences peuvent légalement vous aider.",
+    src: "https://www.make-it-in-germany.com/fr/" },
+  { c: "Allemagne", t: "Carte d'opportunité (Chancenkarte)", s: "warn", sl: "Coûteux", rank: 6, p: ["sup", "tech"],
+    lang: "Allemand A1 ou anglais B2", cost: "Élevé : 13 092 € sur un compte bloqué", time: "3–9 mois", pay: "Travail à temps partiel autorisé",
+    note: "Un an pour chercher un emploi sur place. Pour les diplômés (université ou formation de 2 ans) qui ont des économies.",
+    warn: "Risqué si vous devez emprunter cet argent : aucun emploi n'est garanti.",
+    src: "https://www.make-it-in-germany.com/fr/visa-sejour/types/carte-opportunite" },
+  { c: "Belgique", t: "Permis unique, métiers en pénurie (Wallonie, Bruxelles)", s: "warn", sl: "Difficile", rank: 4, p: ["soin", "tech"],
+    lang: "Français (exigé par l'employeur)", cost: "Faible : l'employeur fait la demande", time: "Plusieurs mois", pay: "Au moins le barème du secteur",
+    note: "Infirmier figure sur la liste wallonne des métiers en pénurie (oct. 2026 – sept. 2027). Il faut d'abord trouver un employeur.",
+    src: "https://emploi.wallonie.be/home/travailleurs-etrangers/permis-de-travail/liste-des-metiers-en-penurie.html" },
+  { c: "Luxembourg", t: "Salarié dans un métier très en pénurie", s: "warn", sl: "Difficile", rank: 5, p: ["soin"],
+    lang: "Français, allemand ou luxembourgeois", cost: "Faible", time: "3–6 mois", pay: "Salaires élevés, logement très cher",
+    note: "Infirmier et aide-soignant figurent sur la liste 2026 de l'ADEM. Il faut un contrat avec un employeur.",
+    src: "https://guichet.public.lu/fr/citoyens/immigration/plus-3-mois/ressortissant-tiers/salarie/salarie-pays-tiers.html" },
+  { c: "France", t: "Travailler dans un métier en tension", s: "warn", sl: "Difficile", rank: 7, p: ["soin", "tech", "bac"],
+    lang: "Français (A2 + examen civique pour la carte pluriannuelle)", cost: "Faible à moyen", time: "3–9 mois après l'offre", pay: "Salaire du contrat",
+    note: "Aides à domicile, aides-soignants, BTP, cuisine, transport… selon la région. Il faut d'abord une vraie offre d'emploi.",
+    src: "https://france-visas.gouv.fr" },
+  { c: "France", t: "Études (Campus France)", s: "warn", sl: "Coûteux", rank: 8, p: ["etu", "bac"],
+    lang: "Français (souvent dispensé de test)", cost: "Élevé : 2 895 €/an en licence, 3 941 €/an en master", time: "8–12 mois", pay: "Travail autorisé jusqu'à 964 h/an",
+    note: "Après un master, une carte d'un an permet de chercher un emploi en France.",
+    src: "https://www.campusfrance.org/fr" },
+  { c: "Canada", t: "Mobilité francophone (hors Québec)", s: "warn", sl: "Difficile", rank: 9, p: ["sup", "tech"],
+    lang: "Français NCLC 5", cost: "Moyen", time: "6–12 mois", pay: "Salaire du contrat",
+    note: "Permis de travail pour les francophones avec une offre d'emploi hors Québec. Le Canada vise 9 % d'immigrants francophones hors Québec en 2026.",
+    src: "https://www.canada.ca/fr/immigration-refugies-citoyennete/services/immigrer-canada/immigration-francophone-minoritaire.html" },
+  { c: "Canada", t: "Entrée express, catégorie français", s: "warn", sl: "Difficile", rank: 10, p: ["sup"],
+    lang: "Français NCLC 7 ou plus", cost: "Moyen (tests, évaluation des diplômes)", time: "6–18 mois", pay: "Résidence permanente",
+    note: "Tirages réservés aux bons francophones, avec des scores minimaux plus bas que les tirages généraux.",
+    src: "https://www.canada.ca/fr/immigration-refugies-citoyennete.html" },
+  { c: "Royaume-Uni", t: "Infirmier diplômé (inscription NMC)", s: "warn", sl: "Difficile", rank: 11, p: ["soin"],
+    lang: "Anglais IELTS 7 ou OET B", cost: "Moyen à élevé", time: "9–18 mois", pay: "Salaire infirmier NHS",
+    note: "Ouvert aux infirmiers diplômés qui postulent directement. Fermé aux aides à domicile.",
+    src: "https://www.gov.uk/health-care-worker-visa" },
+  { c: "France", t: "Carte de séjour « talent »", s: "warn", sl: "Difficile", rank: 12, p: ["sup"],
+    lang: "Variable", cost: "Moyen", time: "3–6 mois", pay: "Salaire élevé exigé",
+    note: "Pour les ingénieurs, informaticiens et médecins avec un diplôme de niveau master.",
+    src: "https://www.service-public.fr/particuliers/vosdroits/N110" }
+];
+
+let current = "all";
+const chipsEl = document.getElementById("profiles");
+const routesEl = document.getElementById("routes");
+const countEl = document.getElementById("count");
+
+function esc(s) { return String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch])); }
+
+function renderChips() {
+  chipsEl.innerHTML = PROFILES.map(p =>
+    `<button type="button" class="chip" id="chip-${p.id}" data-id="${p.id}" aria-pressed="${p.id === current}">${esc(p.label)}</button>`
+  ).join("");
+}
+
+function renderRoutes() {
+  const list = ROUTES.filter(r => current === "all" || r.p.includes(current)).sort((a, b) => a.rank - b.rank);
+  countEl.textContent = `${list.length} voie${list.length > 1 ? "s" : ""} pour ce profil`;
+  routesEl.innerHTML = list.map(r => `
+    <article class="route">
+      <div class="route-head">
+        <div><p class="country">${esc(r.c)}</p><h3>${esc(r.t)}</h3></div>
+        <span class="stamp ${r.s}">${esc(r.sl)}</span>
+      </div>
+      <dl>
+        <dt>Langue</dt><dd>${esc(r.lang)}</dd>
+        <dt>Coût</dt><dd>${esc(r.cost)}</dd>
+        <dt>Délai</dt><dd>${esc(r.time)}</dd>
+        <dt>Revenu</dt><dd>${esc(r.pay)}</dd>
+      </dl>
+      <p class="note">${esc(r.note)}</p>
+      ${r.warn ? `<p class="warnline">${esc(r.warn)}</p>` : ""}
+      <a class="src" href="${esc(r.src)}" target="_blank" rel="noopener">Site officiel ↗</a>
+    </article>`).join("");
+}
+
+chipsEl.addEventListener("click", e => {
+  const b = e.target.closest(".chip");
+  if (!b) return;
+  current = b.dataset.id;
+  track("profil/" + current);
+  renderChips();
+  renderRoutes();
+  try { localStorage.setItem("cl-profile", current); } catch (_) {}
+});
+
+try { const saved = localStorage.getItem("cl-profile"); if (saved && PROFILES.some(p => p.id === saved)) current = saved; } catch (_) {}
+renderChips();
+renderRoutes();
+
+// ---- Bourses ----
+const LEVELS = [
+  { id: "all", label: "Tous les niveaux" },
+  { id: "L", label: "Une licence (après le bac)" },
+  { id: "M", label: "Un master" },
+  { id: "D", label: "Un doctorat ou de la recherche" }
+];
+const LEVEL_NAMES = { L: "Licence", M: "Master", D: "Doctorat" };
+
+// st: ok = ouvert ou imminent, warn = à venir, stop = clos pour ce cycle
+const SCHOLARSHIPS = [
+  { c: "Europe", t: "Erasmus Mundus", lv: ["M"], st: "ok", sl: "Ouvert",
+    cover: "Complet : scolarité + environ 1 400 €/mois", lang: "Selon le programme (souvent anglais)", next: "Déc. 2026 – févr. 2027 selon le programme",
+    note: "Ouvert à toutes les nationalités. Jusqu'à 3 programmes par an. Pas de portail central : on postule programme par programme.",
+    src: "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" },
+  { c: "France", t: "France Excellence Eiffel", lv: ["M", "D"], st: "ok", sl: "Ouvert",
+    cover: "1 200 €/mois (master), billet, assurance. Pas la scolarité.", lang: "Français ou anglais", next: "Dates internes des universités en nov.–déc. 2026",
+    note: "Vous ne postulez pas vous-même : l'université française vous présente avant le 6 janvier 2027.",
+    src: "https://www.campusfrance.org/fr/la-bourse-france-excellence-eiffel" },
+  { c: "Suisse", t: "Bourses d'excellence de la Confédération", lv: ["D"], st: "ok", sl: "Ouvert",
+    cover: "Complet : allocation mensuelle, scolarité, assurance", lang: "Français, allemand ou anglais", next: "Nov.–déc. 2026 selon le pays",
+    note: "Il faut un master et l'accord écrit d'un professeur suisse. Dépôt via l'ambassade de Suisse.",
+    src: "https://www.sbfi.admin.ch/scholarships_en" },
+  { c: "Afrique et monde", t: "Mastercard Foundation Scholars", lv: ["L", "M"], st: "ok", sl: "Ouvert",
+    cover: "Complet : scolarité, logement, repas, voyage", lang: "Surtout anglais, quelques partenaires francophones", next: "Selon l'université (ex. ALU : 30 nov. 2026)",
+    note: "Pour les jeunes à revenus modestes. On postule auprès de l'université partenaire, jamais auprès de la Fondation.",
+    src: "https://mastercardfdn.org/all/scholars/becoming-a-scholar/" },
+  { c: "Belgique (Flandre)", t: "VLIR-UOS ICP Connect", lv: ["L", "M"], st: "warn", sl: "Mi-nov.",
+    cover: "Complet : scolarité, logement, voyage, visa", lang: "Anglais", next: "Ouverture mi-nov. 2026, dates limites janv.–mars 2027",
+    note: "Bénin, Burkina Faso, Burundi, Cameroun, RDC, Guinée, Madagascar, Mali, Niger, Sénégal… La Côte d'Ivoire n'y figure pas. Une seule candidature par an.",
+    src: "https://www.vliruos.be/en/icpconnect-scholarships" },
+  { c: "Hongrie", t: "Stipendium Hungaricum", lv: ["L", "M", "D"], st: "warn", sl: "Mi-nov.",
+    cover: "Scolarité gratuite, allocation, logement. Pas le billet.", lang: "Anglais (souvent B2)", next: "Date limite attendue : 15 janv. 2027",
+    note: "Seulement si votre pays a un accord avec la Hongrie : vérifiez la liste officielle.",
+    src: "https://stipendiumhungaricum.hu" },
+  { c: "Afrique", t: "Université panafricaine (Union africaine)", lv: ["M", "D"], st: "warn", sl: "À venir",
+    cover: "Bourse complète de l'Union africaine", lang: "Français (Yaoundé) ou anglais", next: "Attendu mi-nov. – mi-déc. 2026",
+    note: "Âge maximum en master : 25 ans (hommes), 28 ans (femmes).",
+    src: "https://www.au-pau.org/submission/" },
+  { c: "Turquie", t: "Türkiye Bursları", lv: ["L", "M", "D"], st: "warn", sl: "10 janv.",
+    cover: "Complet : scolarité, logement, billet, année de turc", lang: "Pas de turc exigé au départ", next: "Attendu : 10 janv. – 20 févr. 2027",
+    note: "Moins de 21 ans pour une licence. Ouvert à tous les pays.",
+    src: "https://www.turkiyeburslari.gov.tr" },
+  { c: "Chine", t: "Bourse du gouvernement chinois (CSC)", lv: ["L", "M", "D"], st: "warn", sl: "À venir",
+    cover: "Complet en général : scolarité, logement, allocation", lang: "Chinois ou anglais", next: "Nov. 2026 – avril 2027",
+    note: "Via l'ambassade de Chine ou directement auprès d'une université. Test CSCA exigé pour la licence.",
+    src: "https://www.campuschina.org" },
+  { c: "Banque islamique de développement", t: "Bourses IsDB", lv: ["L", "M", "D"], st: "warn", sl: "À venir",
+    cover: "Scolarité, allocation, billet, assurance", lang: "Selon l'université", next: "Attendu vers le 31 janv. 2027",
+    note: "Pour les pays membres : Sénégal, Mali, Niger, Burkina Faso, Côte d'Ivoire, Cameroun, Bénin, Guinée, Togo, Gabon, Tchad…",
+    src: "https://www.isdb.org/scholarships" },
+  { c: "Allemagne", t: "Fondation Heinrich Böll", lv: ["M", "D"], st: "warn", sl: "15 janv.",
+    cover: "Environ 934 €/mois (master)", lang: "Allemand en général", next: "15 janv. – 1er mars 2027",
+    note: "Excellence académique et engagement social ou écologique.",
+    src: "https://www.boell.de/en/applying-scholarship" },
+  { c: "Maroc", t: "AMCI", lv: ["L", "M", "D"], st: "stop", sl: "Mai 2027",
+    cover: "Scolarité, allocation, logement selon place", lang: "Français pour la plupart", next: "Mai – juillet 2027, via votre ministère",
+    note: "La bourse la plus accessible après le bac : des centaines de places par pays. Dépôt au ministère de votre pays, jamais au Maroc.",
+    src: "https://www.amci.ma" },
+  { c: "Allemagne", t: "DAAD EPOS", lv: ["M", "D"], st: "stop", sl: "Clos",
+    cover: "992 €/mois (master), assurance, voyage", lang: "Anglais ou allemand", next: "Août – oct. 2027 (cycle 2028)",
+    note: "Il faut au moins 2 ans d'expérience professionnelle et un projet lié au développement.",
+    src: "https://www.daad.de/epos" },
+  { c: "Belgique", t: "ARES", lv: ["M"], st: "stop", sl: "Clos",
+    cover: "Complet : allocation, inscription, voyage, visa", lang: "Français", next: "Août – sept. 2027 (cycle 2028)",
+    note: "Masters de spécialisation. Il faut déjà un diplôme et 2 ans d'expérience professionnelle.",
+    src: "https://ares-ac.be/fr/bourses-de-formations-internationales-2027-2028" },
+  { c: "Royaume-Uni", t: "Chevening", lv: ["M"], st: "stop", sl: "Clos",
+    cover: "Complet : scolarité, allocation, billet, visa", lang: "Anglais", next: "Août – oct. 2027 (cycle 2028)",
+    note: "2 ans d'expérience professionnelle exigés, puis retour au pays pendant 2 ans.",
+    src: "https://www.chevening.org" },
+  { c: "Japon", t: "MEXT", lv: ["L", "D"], st: "stop", sl: "Clos",
+    cover: "Complet : scolarité, billet, allocation", lang: "Anglais ou japonais", next: "Avril – mai 2027 (cycle 2028)",
+    note: "Candidature auprès de l'ambassade du Japon de votre pays.",
+    src: "https://www.studyinjapan.go.jp/en/smap-stopj-applications-research.html" }
+];
+
+const DEADLINES = [
+  { when: "15 nov. 2026", t: "Eiffel : dates internes des universités", d: "Exemple : Dauphine. Contactez votre université française dès maintenant.", lv: ["M", "D"], st: "ok", sl: "Confirmé" },
+  { when: "Mi-nov. 2026", t: "VLIR-UOS et Stipendium Hungaricum : ouverture", d: "Préparez vos documents et votre test d'anglais.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
+  { when: "27 nov. 2026", t: "Bourses suisses : Côte d'Ivoire", d: "Les dates varient selon le pays : voir l'ambassade de Suisse.", lv: ["D"], st: "warn", sl: "À vérifier" },
+  { when: "30 nov. 2026", t: "Mastercard : African Leadership University", d: "Licence, sans SAT ni TOEFL.", lv: ["L"], st: "ok", sl: "Confirmé" },
+  { when: "~15 déc. 2026", t: "Université panafricaine", d: "Master et doctorat, bourse de l'Union africaine.", lv: ["M", "D"], st: "warn", sl: "Attendu" },
+  { when: "6 janv. 2027", t: "Eiffel : dépôt par les universités", d: "Date limite nationale.", lv: ["M", "D"], st: "ok", sl: "Confirmé" },
+  { when: "15 janv. 2027", t: "Stipendium Hungaricum", d: "À 14 h, heure de Budapest.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
+  { when: "18 janv. 2027", t: "VLIR-UOS : Université de Gand", d: "Les autres programmes ferment jusqu'en mars.", lv: ["M"], st: "ok", sl: "Confirmé" },
+  { when: "Janv.–févr. 2027", t: "Erasmus Mundus : la plupart des programmes", d: "Vérifiez chaque programme dans le catalogue.", lv: ["M"], st: "ok", sl: "Confirmé" },
+  { when: "~31 janv. 2027", t: "Banque islamique de développement", d: "Licence à post-doctorat, pays membres.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
+  { when: "20 févr. 2027", t: "Türkiye Bursları", d: "Ouverture le 10 janvier.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
+  { when: "1er mars 2027", t: "Fondation Heinrich Böll", d: "Session de printemps.", lv: ["M", "D"], st: "ok", sl: "Confirmé" },
+  { when: "Mars–avr. 2027", t: "Bourse du gouvernement chinois", d: "Ambassade de Chine ou université.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" },
+  { when: "Mai–juil. 2027", t: "AMCI (Maroc)", d: "Surveillez le communiqué de votre ministère.", lv: ["L", "M", "D"], st: "warn", sl: "Attendu" }
+];
+
+let level = "all";
+const levelsEl = document.getElementById("levels");
+const schEl = document.getElementById("scholarships");
+const dlEl = document.getElementById("deadlines");
+const bcountEl = document.getElementById("bcount");
+const STATUS_ORDER = { ok: 0, warn: 1, stop: 2 };
+const matches = x => level === "all" || x.lv.includes(level);
+
+function renderLevels() {
+  levelsEl.innerHTML = LEVELS.map(l =>
+    `<button type="button" class="chip" id="lvl-${l.id}" data-id="${l.id}" aria-pressed="${l.id === level}">${esc(l.label)}</button>`
+  ).join("");
+}
+
+function renderScholarships() {
+  const list = SCHOLARSHIPS.filter(matches).sort((a, b) => STATUS_ORDER[a.st] - STATUS_ORDER[b.st]);
+  bcountEl.textContent = `${list.length} bourse${list.length > 1 ? "s" : ""} pour ce niveau`;
+  schEl.innerHTML = list.map(s => `
+    <article class="route">
+      <div class="route-head">
+        <div><p class="country">${esc(s.c)}</p><h3>${esc(s.t)}</h3><p class="levels">${s.lv.map(l => LEVEL_NAMES[l]).join(" · ")}</p></div>
+        <span class="stamp ${s.st}">${esc(s.sl)}</span>
+      </div>
+      <dl>
+        <dt>Couvre</dt><dd>${esc(s.cover)}</dd>
+        <dt>Langue</dt><dd>${esc(s.lang)}</dd>
+        <dt>Prochaine date</dt><dd>${esc(s.next)}</dd>
+      </dl>
+      <p class="note">${esc(s.note)}</p>
+      <a class="src" href="${esc(s.src)}" target="_blank" rel="noopener">Site officiel ↗</a>
+    </article>`).join("");
+
+  const dl = DEADLINES.filter(matches);
+  dlEl.innerHTML = dl.length ? dl.map(d => `
+    <li>
+      <span class="when">${esc(d.when)}</span>
+      <span class="what"><strong>${esc(d.t)}</strong><span>${esc(d.d)}</span></span>
+      <span class="stamp ${d.st}">${esc(d.sl)}</span>
+    </li>`).join("") : `<li class="empty">Aucune date limite pour ce niveau dans les prochains mois.</li>`;
+}
+
+levelsEl.addEventListener("click", e => {
+  const b = e.target.closest(".chip");
+  if (!b) return;
+  level = b.dataset.id;
+  track("niveau/" + level);
+  renderLevels();
+  renderScholarships();
+  try { localStorage.setItem("cl-level", level); } catch (_) {}
+});
+
+try { const saved = localStorage.getItem("cl-level"); if (saved && LEVELS.some(l => l.id === saved)) level = saved; } catch (_) {}
+renderLevels();
+renderScholarships();
+</script>
+
+</body>
+</html>
